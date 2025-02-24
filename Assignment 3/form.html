@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <script>
+        function validateForm() {
+            var name = document.f1.t1.value;
+            var pass = document.f1.t2.value;
+            var email = document.f1.t3.value;
+            if (name == "") {
+                alert("Please Enter Your Name");
+                return false;
+            }
+            
+            if (pass == "") {
+                alert("Please Enter Your Password");
+               
+                return false;
+            }
+            else{
+                if(pass.length <=8){
+                    alert("Password should be 8 Characters Long");
+                    return false;
+                }
+            }
+            if (email == "") {
+                alert("Please Enter Your Email");
+                return false;            
+            }
+        }
+    </script>
+    <style>
+        form{
+            padding: 10px;
+            border: 5px dotted;
+            background-color: rgb(255, 220, 220);
+        }
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        input{
+            margin: 5px;
+            padding: 5px;
+            border-radius: 0 5px 0 5px;
+        }
+        h1{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form name="f1">
+        <h1>Registration Form</h1>
+        <input type="text" name="t1" placeholder="Enter Your Name"><br>
+        <input type="password" name="t2" placeholder="Enter Your Password"><br>
+        <input type="email" name="t3" placeholder="Enter Your Email"><br>
+        <input type="submit" value="Submit" onclick="return validateForm()">
+    </form>
+    
+</body>
+</html>

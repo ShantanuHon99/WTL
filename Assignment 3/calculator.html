@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <script src="script.js"></script>
+  
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="calculator">
+        <form name="f1">
+            <div class="header">
+                <h1>Calculator</h1>
+            </div>
+            <div class="textbox">
+                <input type="text" name="t1" value="" />
+            </div>
+            <div class="keys">
+                <input type="button" value="1" onclick="keys(1)">
+                <input type="button" value="2" onclick="keys(2)">
+                <input type="button" value="3" onclick="keys(3)">
+                <input type="button" value="+" style="background-color: orange;" onclick="keys('+')">
+                <input type="button" value="4" onclick="keys(4)">
+                <input type="button" value="5" onclick="keys(5)">
+                <input type="button" value="6" onclick="keys(6)">
+                <input type="button" value="-" style="background-color: orange;" onclick="keys('-')">
+                <input type="button" value="7" onclick="keys(7)">
+                <input type="button" value="8" onclick="keys(8)">
+                <input type="button" value="9" onclick="keys(9)">
+                <input type="button" value="*" style="background-color: orange;" onclick="keys('*')">
+                <input type="button" value="0" onclick="keys(0)">
+                <input type="button" value="=" style="background-color: green;" onclick="eq()">
+                <input type="button" value="/" style="background-color: orange;" onclick="keys('/')">
+                <input type="button" value="C" style="background-color: RED;" onclick="clr()">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

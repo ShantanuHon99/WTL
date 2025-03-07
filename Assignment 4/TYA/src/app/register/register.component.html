@@ -1,7 +1,19 @@
-<form action="" method="post">
-    <input type="text" placeholder="Enter Your UserName" name="name" id="name"><br>
-    <input type="password" placeholder="Enter Your Password" name="password" id="password"><br>
-    <input type="password" placeholder="Confirm Your Password" name="password" id="password"><br>
-    <button type="submit">Login</button><br>
-    <a href="">Aleady Have an Account? Login !</a>
-</form>
+<script type="text/javascript">
+function validateForm() {
+    var name = document.getElementById("name").value;
+    var password = document.getElementById("password").value;
+    var confirmPassword = document.getElementById("confirmPassword").value;
+    if (password != confirmPassword) {
+        alert("Passwords do not match.");
+    }
+}    
+</script>
+<div class="form-container">
+    <form action="" method="post">
+        <input type="text" placeholder="Enter Your UserName" name="name" id="name" /><br />
+        <input type="password" placeholder="Enter Your Password" name="password" id="password" /><br />
+        <input type="password" placeholder="Confirm Your Password" name="confirmPassword" id="confirmPassword" /><br />
+        <input type="submit" value="Register" id="submit" onclick="validateForm()" />
+        <a href="">Aleady Have an Account? Login !</a>
+    </form>
+</div>
